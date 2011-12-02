@@ -1,3 +1,4 @@
 #
 # system.prop for startablet
 #
+ro.cwm.prefer_tar=true
