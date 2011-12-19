@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/device_startablet.mk
+    $(LOCAL_DIR)/startablet.mk
