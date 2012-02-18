@@ -18,9 +18,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel \
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/bcm4329.ko:system/lib/hw/bcm4329.ko
+    $(LOCAL_PATH)/prebuilt/bcm4329.ko:system/lib/modules/bcm4329.ko
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/wpa_supplicant.conf:data/misc/wifi/wpa_supplicant.conf \
+    $(LOCAL_PATH)/init.rc:root/init.rc \
     $(LOCAL_PATH)/init.startablet.rc:root/init.startablet.rc \
     $(LOCAL_PATH)/ueventd.startablet.rc:root/ueventd.startablet.rc \
 
@@ -35,7 +37,7 @@ PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/gps.conf:system/etc/gps.conf
 
 PRODUCT_PROPERTY_OVERRIDES := \
-    wifi.interface=wlan0 \
+    wifi.interface=eth0 \
     wifi.supplicant_scan_interval=15
 
 # These are the hardware-specific features
