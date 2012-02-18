@@ -220,13 +220,13 @@ service dhcpcd /system/bin/dhcpcd -ABKL eth0
     disabled
     oneshot
 
-service hciattach /system/bin/brcm_patchram_plus_lge --enable_hci --enable_lpm --pcm_role slave  \
-    --baudrate 3000000 --patchram /system/etc/bluetooth/BCM4329B1_002.002.023.0735.0783.hcd  /dev/ttyHS2
-    class main
-    user bluetooth
-    group bluetooth net_admin system
-    disabled
-    oneshot
+#service hciattach /system/bin/brcm_patchram_plus_lge --enable_hci --enable_lpm --pcm_role slave  \
+#    --baudrate 3000000 --patchram /system/etc/bluetooth/BCM4329B1_002.002.023.0735.0783.hcd  /dev/ttyHS2
+#    class main
+#    user bluetooth
+#    group bluetooth net_admin system
+#    disabled
+#    oneshot
 
 # Initializing Bluetooth Address
 service bdaddr_init /system/bin/bdaddr_init
