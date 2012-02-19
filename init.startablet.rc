@@ -116,6 +116,8 @@ on boot
     mkdir /data/misc/wifi/sockets 0770 wifi wifi
     mkdir /data/misc/dhcp 0770 dhcp dhcp
     chown dhcp dhcp /data/misc/dhcp
+    chown root wifi /dev/rfkill
+    chmod 0660      /dev/rfkill
 
 # bluetooth
     # power up/down interface
