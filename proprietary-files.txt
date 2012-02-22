@@ -44,9 +44,6 @@ etc/permissions/com.google.android.maps.xml
 etc/permissions/com.google.widevine.software.drm.xml
 etc/permissions/com.nvidia.display.xml
 etc/permissions/com.tmus.gslate.apps.xml
-etc/wifi/rtecdc.bin
-etc/wifi/rtecdc_apsta.bin
-etc/wifi/rtecdc-mfgtest.bin
 etc/wifi/nvram.txt
 lib/egl/libEGL_tegra.so
 lib/egl/libGLESv1_CM_tegra.so
