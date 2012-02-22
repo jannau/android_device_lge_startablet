@@ -48,7 +48,6 @@ etc/wifi/rtecdc.bin
 etc/wifi/rtecdc_apsta.bin
 etc/wifi/rtecdc-mfgtest.bin
 etc/wifi/nvram.txt
-etc/wifi/wpa_supplicant.conf
 lib/egl/libEGL_tegra.so
 lib/egl/libGLESv1_CM_tegra.so
 lib/egl/libGLESv2_tegra.so
@@ -110,5 +109,3 @@ lib/libnvwsi.so
 lib/libreference-ril.so
 lib/libril.so
 lib/libstagefrighthw.so
-vendor/firmware/fw_bcm4329.bin
-vendor/firmware/fw_bcm4329_apsta.bin

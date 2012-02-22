@@ -18,8 +18,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel \
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/bcm4329.ko:system/lib/hw/bcm4329.ko \
-    $(LOCAL_PATH)/prebuilt/bcm4329.ko:system/lib/modules/bcm4329.ko \
+    $(LOCAL_PATH)/prebuilt/bcmdhd.ko:system/lib/modules/bcmdhd.ko \
+
+$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4329/device-bcm.mk)
+
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wpa_supplicant.conf:data/misc/wifi/wpa_supplicant.conf \
@@ -37,7 +39,7 @@ PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/gps.conf:system/etc/gps.conf
 
 PRODUCT_PROPERTY_OVERRIDES := \
-    wifi.interface=eth0 \
+    wifi.interface=wlan0 \
     wifi.supplicant_scan_interval=15
 
 # These are the hardware-specific features

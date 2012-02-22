@@ -5,7 +5,7 @@ ro.cwm.prefer_tar=true
 ro.opengles.version=131072
 rild.libpath=/system/lib/lge-ril.so
 rild.libargs=-d /dev/ttyspi0
-wifi.interface=eth0
+wifi.interface=wlan0
 keyguard.no_require_sim=yes
 
 mobiledata.interfaces=gannet0,vsnet0,vsnet1,vsnet2,vsnet3
